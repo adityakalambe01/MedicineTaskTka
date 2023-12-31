@@ -13,7 +13,7 @@ import com.MedicineManagement.service.GetMedicineByIdService;
 public class GetMedicineByIdController {
     @Autowired
     GetMedicineByIdService getMedicineByIdService;
-    @RequestMapping(value = "/getMedicineById/{id}", method = RequestMethod.GET)
+    @RequestMapping(value = "/getMedicineById/{medicineId}", method = RequestMethod.GET)
     public Medicines getMedicinesById(@PathVariable Integer medicineId){
         return getMedicineByIdService.getMedicineById(medicineId);
     }
